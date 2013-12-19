@@ -1,0 +1,33 @@
+{% block body %}
+    {% set project = 'Example project' %}
+    <h1>It works!</h1>
+    <p>
+        Now you can start over here!
+    </p>
+    <p>
+        This is: <strong>{{ project }}</strong>
+    </p>
+    <p>
+        You may try to call a <a href="subpage/page.html">sub page</a> :)
+    </p>
+    <p>
+        Next steps / Todos:
+    </p>
+    <ul>
+        <li>Implement a better twig environment to load or extend layouts</li>
+        <li>Add a better way for the parser</li>
+        <li>Think about a dependency injection!?</li>
+    </ul>
+    <p>
+        Planned features:
+    </p>
+    <ul>
+        <li>Own Twig Environment extensions</li>
+        <li>Basepath support / rewrite</li>
+        <li>Assetic support</li>
+    </ul>
+{% endblock %}
+
+{% block footer %}
+    <hr/>
+{% endblock %}

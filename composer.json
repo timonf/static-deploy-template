@@ -1,0 +1,23 @@
+{
+    "name": "timonf/static-deploy-template",
+    "description": "StaticDeploy will compile Twig templates and other assets. The generated output can run without PHP on any web server.",
+    "autoload": {
+        "psr-0": { "": "lib/" }
+    },
+    "require": {
+        "symfony/process": "2.4.*",
+        "symfony/console": "2.4.*",
+        "twig/twig": ">=1.0.1"
+    },
+    "license": "LGPL-3.0",
+    "authors": [
+        {
+            "name": "Timon",
+            "email": "dev@timonf.de"
+        }
+    ],
+    "extra": {
+        "static-output": "output/",
+        "source": "src/"
+    }
+}
