@@ -4,12 +4,25 @@
     <meta charset="UTF-8" />
     <title>{% block title %}Welcome!{% endblock %}</title>
     {% block stylesheets %}
-        <link href="assets/default.css" rel="stylesheet" />
+        <link href="{{ base('assets/default.css') }}" rel="stylesheet" />
     {% endblock %}
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="{{ base('favicon.ico') }}" />
 </head>
 <body>
+{% include '_partials/navigation.html.twig' %}
+
 {% block body %}{% endblock %}
+
+<footer>
+    <hr/>
+    <small>
+        <strong>StaticDeploy</strong> by <a href="https://github.com/timonf">Timon</a>
+        -
+        rendered at {{ app.renderTime|date('m/d/Y H:i:s') }}
+    </small>
+</footer>
+
 {% block javascripts %}{% endblock %}
+
 </body>
 </html>

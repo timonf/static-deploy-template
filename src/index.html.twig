@@ -1,3 +1,7 @@
+{% extends '_layout.html.twig' %}
+
+{% block title 'It works!' %}
+
 {% block body %}
     {% set project = 'Example project' %}
     <h1>It works!</h1>
@@ -8,13 +12,12 @@
         This is: <strong>{{ project }}</strong>
     </p>
     <p>
-        You may try to call a <a href="subpage/page.html">sub page</a> :)
+        You may try to call a <a href="{{ base('subpage/page.html') }}">sub page</a> :)
     </p>
     <p>
         Next steps / Todos:
     </p>
     <ul>
-        <li>Implement a better twig environment to load or extend layouts</li>
         <li>Add a better way for the parser</li>
         <li>Think about a dependency injection!?</li>
     </ul>
@@ -26,8 +29,4 @@
         <li>Basepath support / rewrite</li>
         <li>Assetic support</li>
     </ul>
-{% endblock %}
-
-{% block footer %}
-    <hr/>
 {% endblock %}
