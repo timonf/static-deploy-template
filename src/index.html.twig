@@ -3,30 +3,23 @@
 {% block title 'It works!' %}
 
 {% block body %}
-    {% set project = 'Example project' %}
-    <h1>It works!</h1>
+    <h1>Hello world!</h1>
     <p>
         Now you can start over here!
     </p>
     <p>
-        This is: <strong>{{ project }}</strong>
+        All other content on this rendered page (index.html.twig),
+        you can find in _layout.html.twig.
     </p>
     <p>
-        You may try to call a <a href="{{ base('subpage/page.html') }}">sub page</a> :)
+        You can dynamically add pages. It is very easy using the
+        <code>base</code> Command:
     </p>
     <p>
-        Next steps / Todos:
+        <a href="{{ base('subpage/page.html') }}">
+            <code>
+                {{ '{{' }} base('subpage/page.html') {{ '}}' }}
+            </code>
+        </a>
     </p>
-    <ul>
-        <li>Add a better way for the parser</li>
-        <li>Think about a dependency injection!?</li>
-    </ul>
-    <p>
-        Planned features:
-    </p>
-    <ul>
-        <li>Own Twig Environment extensions</li>
-        <li>Basepath support / rewrite</li>
-        <li>Assetic support</li>
-    </ul>
 {% endblock %}
