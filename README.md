@@ -1,13 +1,32 @@
 StaticDeploy
 ============
 
-This is a project template for StaticDeploy!
+This is a project template for StaticDeploy! StaticDeploy provides a deployment for static
+html pages right from your Twig templates, Less files and other resources.
 
-Some notes
-----------
+You can use all generated contents without PHP. It's very useful for static information
+pages or small landing pages. You can use the power of dynamic web pages and
 
-All files in "src/" without an underscore at the beginning will be compiled to "output/".
-StaticDeploy provides a deployment for static html pages right from your twig templates.
 
-You can use this compiled static html pages without PHP! It's very useful for static
-information pages or small landing pages.
+Getting started
+---------------
+
+First of all you'll need to install Composer:
+
+    `curl -sS https://getcomposer.org/installer | php`
+
+If you have composer installed, you can just use this command line to create
+a new StaticDeploy project:
+
+    `composer.phar create-project -sdev timonf/static-deploy-template your-project-name`
+
+Now you can create your source content at `src` and you may compile it to `output` via:
+
+    `php bin/staticdeploy.php compile src output`
+
+
+Additional information
+----------------------
+
+All files with underscore at the beginning will be ignored. This is useful, if you want
+to include some files such layout, footer, header or other resources.

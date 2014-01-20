@@ -1,19 +1,12 @@
 {
     "name": "timonf/static-deploy-template",
-    "description": "This is a template.",
-    "require": {
-        "timonf/static-deploy": "dev-master",
-        "symfony/process": "2.4.*",
-        "symfony/console": "2.4.*",
-        "twig/twig": ">=1.0.1"
-    },
+    "description": "Project template for StaticDeploy.",
     "license": "LGPL-3.0",
-    "authors": [
-        {
-            "name": "Timon",
-            "email": "dev@timonf.de"
-        }
-    ],
+    "type": "project",
+    "require": {
+        "php": ">=5.3.3",
+        "timonf/static-deploy": "dev-master"
+    },
     "config": {
         "bin-dir": "bin"
     }
