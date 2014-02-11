@@ -13,16 +13,16 @@ Getting started
 
 First of all you'll need to install Composer:
 
-    `curl -sS https://getcomposer.org/installer | php`
+    curl -sS https://getcomposer.org/installer | php
 
-If you have composer installed, you can just use this command line to create
+If you have Composer installed, you can just use this command to create
 a new StaticDeploy project:
 
-    `composer.phar create-project -sdev timonf/static-deploy-template your-project-name`
+    composer.phar create-project -sdev timonf/static-deploy-template your-project-name
 
 Now you can create your source content at `src` and you may compile it to `output` via:
 
-    `php bin/staticdeploy.php compile src output`
+    php bin/staticdeploy.php compile src output
 
 
 Additional information
